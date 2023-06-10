@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+
+    }
+    .card{
+        padding: 23px 12px;
+        margin: 23px 12px;
+        border: 2px solid red; 
+        background-color: burlywood;
+        /* box-shadow: offset-x offset-y color; */
+        /* box-shadow: offset-x offset-y blur-radius color; */
+        /* box-shadow: offset-x offset-y blur-radius spred-radius color; */
+        /* box-shadow: 10px 13px green; */
+        /* box-shadow: -10px -13px green; */
+        /* box-shadow: 7px 5px 10px green; */
+        /* box-shadow: 10px 13px 10px 10px rgba(34, 214, 214, 0.5); */
+        box-shadow: inset 3px 5px green;
+        box-shadow: 3px 5px green, 4px 6px red;
+    }
+    .card h2{
+        /* text-shadow: 3px 4px white; */
+        text-shadow: 3px 2px 2px white;
+
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is HTML course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, perferendis amet eligendi, delectus debitis aliquid eum recusandae cumque officiis officia iusto rerum, quisquam assumenda ipsam reprehenderit asperiores impedit exercitationem dolor. Et deserunt voluptatum cupiditate?</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is css course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate debitis molestias nostrum ullam et adipisci rem autem, velit ipsa, asperiores tempora porro tenetur excepturi maiores, hic iure aspernatur soluta veritatis animi ducimus illum neque.</p>
+        </div>
+        <div class="card" id="card-3">
+           <h2>Card3</h2>
+           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae error culpa numquam aperiam, fugiat qui sapiente laborum, dolorum sit iusto, illo nisi enim? Maxime minus autem libero dolore voluptatum ad beatae, mollitia culpa cum?</p>
+        </div>
+    </div>
+</body>
+</html>

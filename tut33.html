@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selector</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            
+        }
+        header::before{
+            background: url('https://www.askpython.com/wp-content/uploads/2021/11/women-coding.png') no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.5;
+
+        }
+        .navigation{
+            font-size: 20px;
+            display: flex;
+        }
+        li{
+            list-style: none;
+            padding: 20px 23px;
+        }
+        section{
+            height: 344px;
+            border: 2px solid red;
+            margin: 3px 163px;
+            display: flex;
+            flex-direction: column;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h3{
+            font-size: 4rem;
+        }
+        p{
+            text-align: center;
+        }
+        /* section::before{
+            content: "this is a content";
+        } */
+       
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+        <section>
+            <h3>Welcone to coding World</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti, pariatur non, totam ipsa delectus soluta incidunt quo, 
+                magni ullam obcaecati facilis fugiat sequi ducimus repellat similique nihil? 
+                Unde id ducimus ad porro repellat nesciunt sapiente!</p>
+        </section>
+        <!-- <hr> -->
+    </header>
+</body>
+</html>

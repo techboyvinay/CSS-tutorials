@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;         /*jab tak isko niche na dikhaye tab tak ye sab zero hi hoga*/
+           
+        }
+        body{
+            background-color: cyan;
+        }
+        .container {
+            background-color: rgb(85, 96, 209);
+            border: 3px solid rgb(213, 88, 21);
+            /* padding: 90px;      padding ko top bottom left right har jagah se de sakte hai padding means distance from border */
+            /* padding-top: 30px;
+            padding-left: 20px;
+            padding-right: 30px;
+            padding-bottom: 40px; */
+
+            /* margin-top: 5px;
+            margin-bottom: 10px;
+            margin-left: 15px;
+            margin-right: 20px; */
+            
+            /* padding: 20px 30px 40px 50px;
+            padding = top right bottom left */
+            /* margin: 20px 30px 40px 50px;
+            margin = top right bottom left */
+            /* padding: y(top/bottom) x(left/right); */
+            padding: 34px 19px;
+            margin: 12px 19px;
+            border-radius: 20px;
+            width: 550px;
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is heading</h3>
+        <p id="first">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia vero perferendis provident ipsa
+            doloremque. Error, ad consequatur? Vel ipsam tempora amet deleniti sapiente.</p>
+        <h3>This is heading</h3>
+
+    </div>
+    <div class="container">
+        <h3>This is heading</h3>
+        <p id="second">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia vero perferendis provident ipsa
+            doloremque. Error, ad consequatur? Vel ipsam tempora amet deleniti sapiente.</p>
+        <h3>This is heading</h3>
+
+    </div>
+    <div class="container">
+        <h3>This is heading</h3>
+        <p id="third">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia vero perferendis provident ipsa
+            doloremque. Error, ad consequatur? Vel ipsam tempora amet deleniti sapiente.</p>
+        <h3>This is heading</h3>
+
+    </div>
+</body>
+
+</html>
